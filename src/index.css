@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink:        #0f0e0d;
+    --paper:      #f4f1ec;
+    --red:        #d43a0a;
+    --red-dim:    #7a2106;
+    --mid:        #6b6460;
+    --line:       #e3dfd9;
+    --white:      #ffffff;
+    --surface:    #edeae4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Scroll-reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hero animation */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .anim-hero > * {
+    animation: fadeUp 0.45s ease both;
+  }
+  .anim-hero > *:nth-child(1) { animation-delay: 0.05s; }
+  .anim-hero > *:nth-child(2) { animation-delay: 0.15s; }
+  .anim-hero > *:nth-child(3) { animation-delay: 0.25s; }
+
+  /* Check dot */
+  .check-dot::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 4px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg) translateY(-1px);
+  }
+
+  /* Eyebrow */
+  .eyebrow::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #d43a0a;
+  }
+
+  /* Sec label line */
+  .sec-label::after {
+    content: '';
+    flex: 1;
+    max-width: 40px;
+    height: 1px;
+    background: #d43a0a;
+  }
+}
