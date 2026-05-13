@@ -34,6 +34,11 @@
 
   body {
     background-color: var(--paper);
+    background-image:
+      radial-gradient(ellipse 80% 60% at 5%   20%, rgba(29,  78, 216, 0.32) 0%, transparent 65%),
+      radial-gradient(ellipse 65% 55% at 95%  80%, rgba(37,  99, 235, 0.25) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 50%  2%,  rgba(99, 102, 241, 0.14) 0%, transparent 55%);
+    background-attachment: fixed;
     color: var(--ink);
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
