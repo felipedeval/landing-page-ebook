@@ -1,4 +1,5 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import photo from '../../resources/images/Gemini_Generated_Image_vm74l4vm74l4vm74_Original_SnapseedCopy.jpg'
 
 const credentials = [
   '245 testes E2E com Playwright + N8N + AI Agents',
@@ -15,14 +16,14 @@ export default function About() {
       <div className="container mx-auto px-5 max-w-[1100px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-[280px_1fr] md:gap-16 md:items-start">
 
-          {/* Photo placeholder */}
-          <div className="reveal" aria-hidden="true">
-            <div className="bg-surface rounded-brand aspect-[4/5] relative overflow-hidden flex items-end">
-              <div
-                className="font-display font-extrabold text-[48px] leading-[.9] tracking-[-0.06em] text-ink opacity-[.08] p-5 select-none"
-              >
-                Felipe<br />Deval
-              </div>
+          {/* Foto */}
+          <div className="reveal">
+            <div className="rounded-brand aspect-[4/5] relative overflow-hidden">
+              <img
+                src={photo}
+                alt="Felipe Deval — Senior QA Engineer e Product Owner"
+                className="w-full h-full object-cover object-top"
+              />
               <div className="absolute bottom-[-1px] right-[-1px] bg-brand-red text-white font-display font-extrabold text-xs px-3.5 py-2.5 rounded-brand text-center leading-[1.3]">
                 PO + QA<br />15 anos
               </div>
