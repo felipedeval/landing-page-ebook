@@ -1,7 +1,7 @@
 import { useForm } from '../hooks/useForm'
 
 export default function FormCard() {
-  const { values, onChange, submitted, loading, handleSubmit } = useForm(['name', 'email'])
+  const { values, onChange, submitted, loading, error, handleSubmit } = useForm(['name', 'email'])
 
   return (
     <div
@@ -66,6 +66,12 @@ export default function FormCard() {
           >
             {loading ? 'Enviando…' : 'Quero o ebook gratuito →'}
           </button>
+
+          {error && (
+            <p className="text-red-400 text-[13px] mt-2 text-center" role="alert">
+              {error}
+            </p>
+          )}
         </form>
       ) : (
         <div

@@ -1,7 +1,7 @@
 import { useForm } from '../hooks/useForm'
 
 export default function CtaFinal() {
-  const { values, onChange, submitted, loading, handleSubmit } = useForm(['email'])
+  const { values, onChange, submitted, loading, error, handleSubmit } = useForm(['email'])
 
   return (
     <section className="bg-brand-red py-16 text-center" aria-labelledby="cta-title">
@@ -51,6 +51,10 @@ export default function CtaFinal() {
           <p className="text-white font-medium text-base">
             ✓ Tudo certo! O ebook está a caminho.
           </p>
+        )}
+
+        {error && (
+          <p className="text-white/80 text-sm mt-2" role="alert">{error}</p>
         )}
 
         <p className="text-[12px] text-white/40 mt-3" aria-live="polite">
