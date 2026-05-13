@@ -61,7 +61,7 @@ export default function FormCard() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-brand-red text-white border-0 rounded-brand py-4 font-display text-sm font-bold tracking-[.02em] cursor-pointer min-h-[48px] transition-opacity duration-200 hover:opacity-90 active:scale-[.98] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="btn-glow w-full bg-brand-red text-[#060c18] border-0 rounded-brand py-4 font-display text-sm font-bold tracking-[.02em] cursor-pointer min-h-[48px] disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Enviar formulário e receber o ebook gratuitamente"
           >
             {loading ? 'Enviando…' : 'Quero o ebook gratuito →'}

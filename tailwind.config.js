@@ -7,8 +7,8 @@ export default {
         ink: '#e8edf5',
         paper: '#060c18',
         brand: {
-          red: '#d43a0a',
-          'red-dim': '#7a2106',
+          red: '#38bdf8',
+          'red-dim': '#0284c7',
         },
         mid: '#7a8fa8',
         line: '#1a2a45',

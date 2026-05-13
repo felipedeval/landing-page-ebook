@@ -16,7 +16,7 @@ export default function Nav() {
           </a>
           <a
             href="#form"
-            className="text-[13px] font-medium bg-brand-red text-white px-[18px] py-[9px] rounded-brand no-underline whitespace-nowrap transition-opacity duration-150 hover:opacity-85"
+            className="btn-glow text-[13px] font-medium bg-brand-red text-[#060c18] px-[18px] py-[9px] rounded-brand no-underline whitespace-nowrap font-bold"
             aria-label="Baixar ebook gratuito"
           >
             Baixar ebook ↓

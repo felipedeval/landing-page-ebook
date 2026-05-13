@@ -7,6 +7,9 @@
 .bg-card     { background-color: #132039 !important; }
 .bg-ink      { background-color: #e8edf5 !important; }
 .bg-paper    { background-color: #060c18 !important; }
+.bg-brand-red { background-color: #38bdf8 !important; }
+.text-brand-red { color: #38bdf8 !important; }
+.border-brand-red { border-color: #38bdf8 !important; }
 .text-ink    { color: #e8edf5 !important; }
 .text-mid    { color: #7a8fa8 !important; }
 .border-line { border-color: #1a2a45 !important; }
@@ -14,12 +17,42 @@
 .border-t.border-line,
 .border-y.border-line { border-color: #1a2a45 !important; }
 
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.3s ease, border-color 0.3s ease,
+              box-shadow 0.3s ease, transform 0.3s ease;
+}
+.glass-card:hover {
+  background: rgba(56, 189, 248, 0.08);
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 0 32px rgba(56, 189, 248, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Button glow */
+.btn-glow {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+.btn-glow:hover:not(:disabled) {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 0 22px rgba(56, 189, 248, 0.45),
+              0 4px 14px rgba(56, 189, 248, 0.25);
+}
+.btn-glow:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
 @layer base {
   :root {
     --ink:        #e8edf5;
     --paper:      #060c18;
-    --red:        #d43a0a;
-    --red-dim:    #7a2106;
+    --red:        #38bdf8;
+    --red-dim:    #0284c7;
     --mid:        #7a8fa8;
     --line:       #1a2a45;
     --white:      #ffffff;
@@ -103,7 +136,7 @@
     display: block;
     width: 20px;
     height: 2px;
-    background: #d43a0a;
+    background: #38bdf8;
   }
 
   /* Sec label line */
@@ -112,6 +145,6 @@
     flex: 1;
     max-width: 40px;
     height: 1px;
-    background: #d43a0a;
+    background: #38bdf8;
   }
 }
