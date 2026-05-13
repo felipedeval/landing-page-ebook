@@ -6,7 +6,7 @@ export default function Footer() {
     >
       <div className="container mx-auto px-5 max-w-[1100px]">
         <p>
-          © 2025 Felipe Deval ·{' '}
+          © 2026 Felipe Deval ·{' '}
           <a href="/privacidade" className="no-underline hover:text-ink transition-colors">
             Política de Privacidade
           </a>{' '}
