@@ -67,7 +67,7 @@ export default function Modules() {
           {modules.map((mod, i) => (
             <article
               key={i}
-              className="reveal bg-white p-6 rounded-brand cursor-default transition-colors duration-200 hover:bg-ink hover:text-white group"
+              className="reveal bg-surface border border-line p-6 rounded-brand cursor-default transition-colors duration-200 hover:bg-card hover:border-brand-red/30 group"
               role="listitem"
               style={{ transitionDelay: `${i * 40}ms` }}
             >
@@ -77,7 +77,7 @@ export default function Modules() {
               <h3 className="font-display font-bold text-[15px] leading-tight mb-2">
                 {mod.name}
               </h3>
-              <p className="text-[13px] text-mid leading-relaxed transition-colors duration-200 group-hover:text-white/50">
+              <p className="text-[13px] text-mid leading-relaxed transition-colors duration-200 group-hover:text-ink/70">
                 {mod.sub}
               </p>
             </article>

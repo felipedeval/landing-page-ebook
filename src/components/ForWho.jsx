@@ -27,7 +27,7 @@ export default function ForWho() {
   const ref = useScrollReveal()
 
   return (
-    <section className="bg-ink text-white py-14 md:py-20" aria-labelledby="forwho-title" ref={ref}>
+    <section className="bg-surface border-y border-line py-14 md:py-20" aria-labelledby="forwho-title" ref={ref}>
       <div className="container mx-auto px-5 max-w-[1100px]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
 
@@ -42,13 +42,13 @@ export default function ForWho() {
               pra <em className="not-italic text-brand-red">você</em> se…
             </h2>
 
-            <p className="reveal text-[10px] font-bold tracking-[.12em] uppercase text-white/30 mb-4">
+            <p className="reveal text-[10px] font-bold tracking-[.12em] uppercase text-mid mb-4">
               Você se encaixa aqui
             </p>
 
             <ul className="reveal flex flex-col gap-3.5 list-none" aria-label="Quem deve baixar o ebook">
               {checkItems.map((item, i) => (
-                <li key={i} className="flex gap-3 items-start text-[15px] leading-relaxed text-white/80">
+                <li key={i} className="flex gap-3 items-start text-[15px] leading-relaxed text-ink">
                   <span
                     className="check-dot w-5 h-5 rounded-full bg-brand-red flex-shrink-0 mt-0.5 flex items-center justify-center"
                     aria-hidden="true"
@@ -63,13 +63,13 @@ export default function ForWho() {
           <div>
             <div className="h-12" aria-hidden="true" />
 
-            <p className="reveal text-[10px] font-bold tracking-[.12em] uppercase text-white/30 mb-3">
+            <p className="reveal text-[10px] font-bold tracking-[.12em] uppercase text-mid mb-3">
               Não é pra você se
             </p>
 
             <ul className="reveal flex flex-col gap-3 list-none" aria-label="Quem não deve baixar o ebook">
               {xItems.map((item, i) => (
-                <li key={i} className="flex gap-3 text-sm text-white/35 leading-relaxed">
+                <li key={i} className="flex gap-3 text-sm text-mid/60 leading-relaxed">
                   <span className="text-base leading-[1.4] flex-shrink-0" aria-hidden="true">×</span>
                   {item}
                 </li>
@@ -77,7 +77,7 @@ export default function ForWho() {
             </ul>
 
             <div
-              className="reveal border-t border-white/[.08] mt-9 pt-8"
+              className="reveal border-t border-line mt-9 pt-8"
               aria-label="O que você leva com o ebook"
             >
               <p className="text-[10px] font-bold tracking-[.12em] uppercase text-white/28 mb-3.5">
@@ -85,7 +85,7 @@ export default function ForWho() {
               </p>
               <div className="flex flex-col gap-2.5" role="list">
                 {bonusItems.map((item, i) => (
-                  <div key={i} className="flex gap-2.5 items-center text-sm text-white/65" role="listitem">
+                  <div key={i} className="flex gap-2.5 items-center text-sm text-mid" role="listitem">
                     <span className="text-brand-red font-bold flex-shrink-0" aria-hidden="true">→</span>
                     {item}
                   </div>

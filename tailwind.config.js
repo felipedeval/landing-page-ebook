@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0f0e0d',
-        paper: '#f4f1ec',
+        ink: '#e8edf5',
+        paper: '#060c18',
         brand: {
           red: '#d43a0a',
           'red-dim': '#7a2106',
         },
-        mid: '#6b6460',
-        line: '#e3dfd9',
-        surface: '#edeae4',
+        mid: '#7a8fa8',
+        line: '#1a2a45',
+        surface: '#0d1628',
+        card: '#132039',
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],

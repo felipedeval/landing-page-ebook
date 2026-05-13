@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="py-6 border-t border-line text-[13px] text-mid text-center"
+      className="py-6 border-t border-line text-[13px] text-mid text-center bg-paper"
       role="contentinfo"
     >
       <div className="container mx-auto px-5 max-w-[1100px]">

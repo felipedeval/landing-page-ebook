@@ -2,16 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Force dark-navy token overrides — PostCSS cache bypass */
+.bg-surface  { background-color: #0d1628 !important; }
+.bg-card     { background-color: #132039 !important; }
+.bg-ink      { background-color: #e8edf5 !important; }
+.bg-paper    { background-color: #060c18 !important; }
+.text-ink    { color: #e8edf5 !important; }
+.text-mid    { color: #7a8fa8 !important; }
+.border-line { border-color: #1a2a45 !important; }
+.border-b.border-line,
+.border-t.border-line,
+.border-y.border-line { border-color: #1a2a45 !important; }
+
 @layer base {
   :root {
-    --ink:        #0f0e0d;
-    --paper:      #f4f1ec;
+    --ink:        #e8edf5;
+    --paper:      #060c18;
     --red:        #d43a0a;
     --red-dim:    #7a2106;
-    --mid:        #6b6460;
-    --line:       #e3dfd9;
+    --mid:        #7a8fa8;
+    --line:       #1a2a45;
     --white:      #ffffff;
-    --surface:    #edeae4;
+    --surface:    #0d1628;
+    --card:       #132039;
   }
 
   html {

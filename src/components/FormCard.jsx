@@ -6,7 +6,7 @@ export default function FormCard() {
   return (
     <div
       id="form"
-      className="bg-ink text-white rounded-brand p-8 relative md:p-10 md:sticky md:top-20"
+      className="bg-card border border-line text-white rounded-brand p-8 relative md:p-10 md:sticky md:top-20"
       role="region"
       aria-label="Formulário para receber o ebook"
     >
