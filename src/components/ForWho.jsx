@@ -69,8 +69,8 @@ export default function ForWho() {
 
             <ul className="reveal flex flex-col gap-3 list-none" aria-label="Quem não deve baixar o ebook">
               {xItems.map((item, i) => (
-                <li key={i} className="flex gap-3 text-sm text-mid/60 leading-relaxed">
-                  <span className="text-base leading-[1.4] flex-shrink-0" aria-hidden="true">×</span>
+                <li key={i} className="flex gap-3 text-sm text-mid leading-relaxed">
+                  <span className="text-base leading-[1.4] flex-shrink-0 text-red-500 font-bold" aria-hidden="true">×</span>
                   {item}
                 </li>
               ))}
