@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="container mx-auto px-5 max-w-[1100px]">
         <p>
           © 2026 Felipe Deval ·{' '}
-          <a href="/privacidade" className="no-underline hover:text-ink transition-colors">
+          {/* <a href="/privacidade" className="no-underline hover:text-ink transition-colors">
             Política de Privacidade
           </a>{' '}
-          ·{' '}
+          ·{' '} */}
           <a
-            href="https://linkedin.com/in/felipedeval"
+            href="https://www.linkedin.com/in/felipe-deval-386510b2/"
             target="_blank"
             rel="noopener noreferrer"
             className="no-underline hover:text-ink transition-colors"
@@ -22,13 +22,23 @@ export default function Footer() {
           </a>{' '}
           ·{' '}
           <a
-            href="https://youtube.com/@felipedeval"
+            href="https://www.youtube.com/@felipedeval-fd"
             target="_blank"
             rel="noopener noreferrer"
             className="no-underline hover:text-ink transition-colors"
             aria-label="Canal YouTube de Felipe Deval (abre em nova aba)"
           >
             YouTube
+          </a>{' '}
+          ·{' '}
+          <a
+            href="https://www.instagram.com/felipedeval/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline hover:text-ink transition-colors"
+            aria-label="Instagram de Felipe Deval (abre em nova aba)"
+          >
+            Instagram
           </a>
         </p>
       </div>

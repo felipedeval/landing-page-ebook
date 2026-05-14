@@ -3,9 +3,8 @@ import photo from '../../resources/images/Gemini_Generated_Image_vm74l4vm74l4vm7
 
 const credentials = [
   '245 testes E2E com Playwright + N8N + AI Agents',
-  'PO do Filmelier, Noverama e Sofa Smart Suite',
+  'PO do Filmelier, Noverama e outros produtos internos',
   'Co-fundador do Trilhamentor — SaaS em construção ao vivo',
-  'Relocação planejada para Bergamo, Itália, em 2026',
 ]
 
 export default function About() {
