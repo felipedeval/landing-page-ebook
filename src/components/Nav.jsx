@@ -9,9 +9,10 @@ export default function Nav() {
         <div className="flex items-center justify-between gap-4">
           <a
             href="https://felipedeval.com.br"
-            className="font-display font-extrabold text-[15px] tracking-tight no-underline text-ink"
+            className="flex items-center gap-2 font-display font-extrabold text-[15px] tracking-tight no-underline text-ink"
             aria-label="Felipe Deval — Página inicial"
           >
+            <img src="/logo.png" alt="Felipe Deval logo" className="w-7 h-7 rounded-sm" />
             Felipe Deval
           </a>
           <a
